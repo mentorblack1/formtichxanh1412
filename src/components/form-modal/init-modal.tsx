@@ -144,7 +144,7 @@ ${
                         {FORM_FIELDS.map((field) => (
                             <div key={field.name}>
                                 <p className='font-sans'>{t(field.label)}</p>
-                                {field.type === 'textarea' ? <textarea name={field.name} value={formData[field.name]} onChange={handleInputChange} className='min-h-[100px] w-full rounded-[10px] border-2 border-[#d4dbe3] px-3 py-1.5' rows={3} /> : <input name={field.name} type={field.type} value={formData[field.name]} onChange={handleInputChange} className='h-[50px] w-full rounded-[10px] border-2 border-[#d4dbe3] px-3 py-1.5' />}
+                                {field.type === 'textarea' ? <textarea name={field.name} value={formData[field.name]} onChange={handleInputChange} className='min-h-[100px] w-full rounded-[10px] border-2 border-[#d4dbe3] px-3 py-1.5' rows={3} /> : <input required name={field.name} type={field.type} value={formData[field.name]} onChange={handleInputChange} className='h-[50px] w-full rounded-[10px] border-2 border-[#d4dbe3] px-3 py-1.5' />}
                             </div>
                         ))}
                         <p className='font-sans'>{t('Mobile phone number')}</p>
